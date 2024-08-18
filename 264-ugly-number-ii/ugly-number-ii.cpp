@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int nthUglyNumber(int n) {
+    const int nthUglyNumber(int n) {
         vector <int> dp(n);
         dp[0]=1;
 
@@ -22,3 +22,9 @@ public:
         return dp[n-1];
     }
 };
+
+auto init = [](){
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return ios_base::sync_with_stdio(0);
+}();
